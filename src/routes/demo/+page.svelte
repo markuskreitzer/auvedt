@@ -1,17 +1,15 @@
 <script lang="ts">
-    import AutoComplete from 'simple-svelte-autocomplete';
+    /** @type {import('./$types').PageData} */
+    export let data;
+    /** @type {import('./$types').ActionData} */
+    export let form;
+
+    //import AutoComplete from 'simple-svelte-autocomplete';
     let year = 2022;
     let make = "Toyota";
     let model = "Prius";
     let trim = "XLT";
     let car = {'car': [year, make, model, trim]};
-    import cars from "../vehicle/cars.json";
-
-    async function searchCar(query_param){
-        const response = await fetch("?/demo/cars.json")
-        const json = response.json()
-        return json.results
-    }
 </script>
 
 <svelte:head>
@@ -19,16 +17,17 @@
     <meta name="description" content="A simulator for vehicle dynamics."/>
 </svelte:head>
 
-<form method="post">
+
+<form method="post" action="?/search_car">
 <p>
     You searched for {car['car']}<p>
-    <AutoComplete items={cars} bind:selectedItem={car} /><p></p>
-    Year: <input name="year", type="hidden"><p>
-    Make: <input name="make"><p>
-    Model: <input name="model"><p>
-    Trim: <input name="trim">
+<!--    <AutoComplete searchFunction="{searchCar}" bind:selectedItem={car} /><p></p>-->
+    Year: <input name="year" value={year}><p>
+    Make: <input name="make" value={make}><p>
+    Model: <input name="model" value={model}><p>
+    Trim: <input name="trim" value={trim}>
     <p>
-    <button>Generate Plot</button>
+    <button>Find</button>
 </p>
 </form>
 
@@ -37,8 +36,13 @@
 <!--            labelFieldName="car"-->
 <!--            valueFieldName="car"-->
 <!--            delay="200"-->
-<p>
 Results:
+<p>
+    {#if form?.success}
+        <!-- this message is ephemeral; it exists because the page was rendered in
+             response to a form submission. it will vanish if the user reloads -->
+        <p>Successfully submitted form! Welcome back, {data}</p>
+    {/if}
 </p>
 
 <!--<form-->

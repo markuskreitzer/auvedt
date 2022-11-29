@@ -16,8 +16,10 @@
 		"@neoconfetti/svelte": "^1.0.0",
 		"@playwright/test": "1.25.0",
 		"@sveltejs/adapter-auto": "next",
-		"@sveltejs/kit": "next",
+		"@sveltejs/kit": "1.0.0-next.565",
+		"@types/async-csv": "^2.1.1",
 		"@types/cookie": "^0.5.1",
+		"@types/lodash": "^4.14.190",
 		"@typescript-eslint/eslint-plugin": "^5.27.0",
 		"@typescript-eslint/parser": "^5.27.0",
 		"eslint": "^8.16.0",
@@ -35,8 +37,11 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"csvtojson": "^2.0.10",
 		"dotenv": "^16.0.3",
+		"ecef-projector": "^1.0.1",
 		"googleapis": "^109.0.1",
+		"lodash": "^4.17.21",
 		"mathjs": "^11.4.0"
 	}
 }

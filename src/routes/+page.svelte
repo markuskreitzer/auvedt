@@ -1,6 +1,6 @@
 <script>
 	import welcome from '$lib/images/auburn.png';
-	import welcome_fallback from '$lib/images/auburn.png';
+	import welcome_fallback from '$lib/images/auburn_cropped.png';
 </script>
 
 <svelte:head>

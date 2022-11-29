@@ -1,4 +1,4 @@
-import type {Vehicle} from "./vehicle.server";
+import type {Vehicle} from "./vehicle";
 import * as math from "mathjs";
 
 function kw2hp(kw:number){

@@ -1,0 +1,23 @@
+﻿Year,Make,Model,Trim,Cd,CdA,Power (kW),Torque (N-m),Mass (kg)
+2011 - 2015,Chevrolet,Volt,,0.28,6.51,111.1093,,"1,721"
+2016,Chevrolet,Volt,,0.285,6.68,111.1093,,"1,721"
+1996,General Motors,EV1,,0.19,3.96,102,,1400
+2022,Toyota,Prius,M20A-FXS,0.25,5.84,164,,"1,317"
+2022,Toyota,Prius,2ZR-FXE,0.25,5.84,103,,"1,317"
+2021,Tesla,Model S,,0.208,6.05,250,1301.585,2069
+2022,Tesla,Model S,,0.208,6.05,615,1301.585,2250
+2012,Tesla,Model S,,0.208,6.05,225.2014,420.3,
+2021,Mercedes-Benz,EQS,,0.2,2.51,385,,2480
+2021,NIO,ET7,,0.208,2.56,480,,2434
+2022,Porsche,Taycan,,0.22,0.513,270,,2295
+2022,Tesla,Model Y,,0.23,6.7,200,,2003
+2022,Audi,e-tron GT,,0.24,2.35,370,,2326
+2018,Tesla,Model X,,0.24,6.2,311,,2301
+2020,Audi,e-tron Sportback,,0.26,2.35,370,,2760
+2022,Porsche,Taycan Turbo 4S Cross Turismo,,0.26,2.37,560,,2320
+2022,Audi,e-tron Quattro,,0.28,2.35,165,,2445
+2013,Nissan,Leaf,,0.28,7.8,80,,1493
+2017,Nissan,Leaf,,0.28,7.8,80,,1600
+2014,BMW,i3,,0.3,0.69,125,,1195
+2022,Volvo,C40 Recharge,,0.329,2.56,300,,2132
+2011,Mitsubishi,i-MiEV,,0.35,6.51,47,,1185
