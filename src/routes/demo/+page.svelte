@@ -9,7 +9,8 @@
     let make = "Toyota";
     let model = "Prius";
     let trim = "XLT";
-    let car = {'car': [year, make, model, trim]};
+    let car = [year, make, model, trim];
+
 </script>
 
 <svelte:head>
@@ -20,9 +21,9 @@
 
 <form method="post" action="?/search_car">
 <p>
-    You searched for {car['car']}<p>
+    You searched for {car}<p>
 <!--    <AutoComplete searchFunction="{searchCar}" bind:selectedItem={car} /><p></p>-->
-    Year: <input name="year" value={year}><p>
+    Year: <input name="year" value={year} ><p>
     Make: <input name="make" value={make}><p>
     Model: <input name="model" value={model}><p>
     Trim: <input name="trim" value={trim}>

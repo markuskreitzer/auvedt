@@ -19,9 +19,9 @@
 </svelte:head>
 
 
-<h1>Complete List of Vehicles</h1>
+<h1>List of Electric Vehicles</h1>
 <body>
-<table>
+<table class="center">
     <thead>
     <tr>
         {#each Object.keys(data[0]) as columnHeading}
@@ -43,19 +43,10 @@
 
 
 <style>
-    .container{
-        text-align: center;
-        border: 0px solid ;
-        /*width: 300px;*/
-        /*height: 200px;*/
-        /*padding-top: 100px;*/
-    }
-    #btn{
-        font-size: 25px;
-    }
     table {
         border: 1px solid;
         margin: 10px;
+        border-collapse: collapse;
     }
     table.center {
         margin-left: auto;
@@ -67,14 +58,19 @@
     }
 
     td {
+        padding: 5px;
         align-items: center;
         border: 0px solid;
         border-collapse: collapse;
         margin: 10px;
+        border-right: solid 1px gray;
+        border-left: solid 1px gray;
+        border-bottom: solid 1px gray;
     }
     th {
+        text-transform: capitalize;
         font-weight: bold;
-        border: 0px solid;
+        border: 2px solid gray;
         border-collapse: collapse;
         margin: 10px;
     }

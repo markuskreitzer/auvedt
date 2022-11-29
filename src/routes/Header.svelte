@@ -26,7 +26,13 @@
 				<a href="/demo">Demo</a>
 			</li>
 			<li aria-current={$page.url.pathname.startsWith('/vehicle') ? 'page' : undefined}>
-				<a href="/vehicle">Vehicle Data</a>
+				<a href="/vehicle">Vehicles</a>
+			</li>
+			<li aria-current={$page.url.pathname.startsWith('/vehicle/new') ? 'page' : undefined}>
+				<a href="/vehicle/new">Add Vehicle</a>
+			</li>
+			<li aria-current={$page.url.pathname.startsWith('/vehicle/track') ? 'page' : undefined}>
+				<a href="/vehicle/track">Track</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">

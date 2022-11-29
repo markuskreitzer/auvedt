@@ -1,23 +1,18 @@
 import * as dotenv from 'dotenv'
 import {google} from "googleapis";
+dotenv.config()
 
 
 //import {Request, Response} from "express";
 //import express from "express";
-
 //const app = express();
-
-dotenv.config()
-
 //app.set("view engine", "ejs")
-
 // app.post("/", async (req: Request, res: Response) => {
 //     const { request, name }  = req.body;
 // })
 
-
 const auth = new google.auth.GoogleAuth({
-    keyFile: "../../../keys.json",
+    keyFile: process.env.KEYFILE,
     scopes: "https://www.googleapis.com/auth/spreadsheets",
 });
 
@@ -32,12 +27,11 @@ async function get_sheet_data(auth_object: any, sheet_name: string) {
     const readData = await sheets.spreadsheets.values.get({
         auth, //auth object
         spreadsheetId, // spreadsheet id
-        range: `drag_coefficients!A2:D6`, //range of cells to read from.
-        //=drag_coefficients!A2:D6
+        range: `${sheet_name}!A2:D6`, //range of cells to read from.
     })
 
     //send the data read with the response
     console.log(readData.data.values)
 }
 
-// get_sheet_data(authClientObject, "drag_coefficients").catch(console.error);
+// get_sheet_data(authClientObject, "master").catch(console.error);

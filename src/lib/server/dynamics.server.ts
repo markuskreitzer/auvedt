@@ -1,5 +1,3 @@
-import type {Vehicle} from "./vehicle";
-import * as math from "mathjs";
 
 function kw2hp(kw:number){
     const hp = 1.35962; //kw
@@ -19,28 +17,18 @@ function lbft2nm(lbft: number){
     const nm = 1.3558179483314;
     return lbft * nm;
 }
-function generate_plot_data(vehicle: Vehicle, drive_route: DriveRoute){
-    const cdA = vehicle.cda
-    const t = [1,3,4,5,6]
-    const y = math.multiply(cdA, drive_route.t)
-    return [t,y]
-}
-
-export const vehicles: (string | number)[][] = [
-    ['2001', 'Ford', 'Focus', 0.34, 1.333 ]
-]
 
 interface RouteData {
     x: Array<number>;
-    y: Array<number> | undefined;
-    z: Array<number> | undefined;
+    y: Array<number>;
+    z: Array<number>;
     t: Array<number>;
 }
 
 export default class DriveRoute {
     x: Array<number>;
-    y: Array<number> | undefined;
-    z: Array<number> | undefined;
+    y: Array<number>;
+    z: Array<number>;
     t: Array<number>;
 
     constructor(route_data: RouteData) {
