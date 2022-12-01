@@ -20,8 +20,4 @@ vehicle_info = r.json()</code></pre>
 		More example in <a href="https://mathworks.com">MATLAB</a> and other languages to follow.
 	</p>
 
-	<p>
-		The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading and form handling. Try
-		using it with JavaScript disabled!
-	</p>
 </div>
