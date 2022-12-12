@@ -1,11 +1,11 @@
 <script>
-	import welcome from '$lib/images/auburn.png';
-	import welcome_fallback from '$lib/images/auburn_cropped.png';
+	import welcome from '$lib/images/logo.png';
+	import welcome_fallback from '$lib/images/logo_cropped.png';
 </script>
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Vehcile Dynamics Toolkit" />
 </svelte:head>
 
 <section>
@@ -21,10 +21,9 @@
 	</h1>
 	<h2>
 		<strong>
-			(AUVeDT)
+			<a href="https://vehicledynamics.info">vehicledynamics.info</a>
 		</strong>
 		<br/>
-		A class project for ELEC-6970
 	</h2>
 </section>
 

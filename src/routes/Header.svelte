@@ -1,12 +1,12 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/auburn_cropped.png';
+	import logo from '$lib/images/logo_cropped.png';
 	import github from '$lib/images/github.svg';
 </script>
 
 <header>
 	<div class="corner">
-		<a href="https://auburn.edu">
+		<a href="https://vehicledynamics.info">
 			<img src={logo} alt="AUVEDT" />
 		</a>
 	</div>
@@ -41,7 +41,7 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/markuskreitzer/auvedt">
+		<a href="https://github.com/cygnul/vehicledynamics">
 			<img src={github} alt="GitHub" />
 		</a>
 	</div>

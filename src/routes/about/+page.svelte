@@ -7,13 +7,13 @@
 	<h1>About this app</h1>
 
 	<p>
-		This is an app made for ELEC-6970, Special Topics in Electrical Engineering, Eduard Muljadi, Professor of Electrical and Computer Engineering. It is to demonstrate a database of
-		vehicle dynamics.
+		For years I've been trying to create models for aerodynamics of vehicles.
+		This website hopes to be a repository and api for vehicle technical specifications.
 	</p>
 
 	<pre><code>
 import requests
-r = requests.get("https://auvedd.com/'{'query_string'}'")
+r = requests.get("https://vehicledynamics.info/api/v1/'{'query_string'}'")
 vehicle_info = r.json()</code></pre>
 
 	<p>

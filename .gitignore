@@ -13,3 +13,6 @@ vite.config.ts.timestamp-*
 /trash
 keys.json
 .idea
+
+# Local Netlify folder
+.netlify

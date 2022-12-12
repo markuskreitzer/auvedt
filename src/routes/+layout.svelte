@@ -11,7 +11,7 @@
 	</main>
 
 	<footer>
-		<p>visit <a href="https://auburn.edu">Auburn</a> and schedule a campus tour today!</p>
+		<p>Copyright 2022 <a href="https://cygnul.com"> Cygnul Systems</a>  All rights reserved.</p>
 	</footer>
 </div>
 
