@@ -41,7 +41,7 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/cygnul/vehicledynamics">
+		<a href="https://github.com/cygnuls/vehicledynamics.info">
 			<img src={github} alt="GitHub" />
 		</a>
 	</div>
