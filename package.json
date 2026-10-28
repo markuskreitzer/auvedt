@@ -37,7 +37,7 @@
   "dependencies": {
     "@sveltejs/adapter-auto": "^3.3.1",
     "@sveltejs/adapter-netlify": "^5.2.0",
-    "@sveltejs/kit": "^2.70.2",
+    "@sveltejs/kit": "^3.0.0",
     "csvtojson": "^2.0.10",
     "dotenv": "^16.0.3",
     "ecef-projector": "^1.0.1",
