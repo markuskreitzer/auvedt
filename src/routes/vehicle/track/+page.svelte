@@ -32,6 +32,7 @@
     <p>
         Position:<br>
         <table>
+        <tbody>
         <tr>
             <td>Longitude:</td>
             <td>{location[0]}</td>
@@ -44,6 +45,7 @@
         <td>Altitude:</td>
         <td>{location[2]}</td>
     </tr>
+        </tbody>
 </table>
         <p>
         Previous Locations:
